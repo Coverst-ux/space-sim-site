@@ -353,11 +353,10 @@ section {
 }
 
 .term::after {
-  content: attr("data-definition");
+  content: attr(data-definition);
   position: absolute;
   bottom: 100%;
   left: 0;
-  //transform: translateX(-50%);
 
   opacity: 0;
   visibility: hidden;
@@ -365,13 +364,16 @@ section {
   background: #d10070;
   color: var(--color-text-body);
 
-  font-family: (--font-body);
+  font-family: var(--font-body);
   font-size: 1rem;
 
   padding: 0.75rem;
   border-radius: 8px;
-  width: max-content;
 
+  width: 40rem;
+  max-width: 90vw;
+  white-space: normal;
+  overflow-wrap: break-word;
   z-index: 1000;
   transition: opacity 0.2s ease;
 }
