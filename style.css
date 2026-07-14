@@ -252,7 +252,15 @@
     }
 
     .table-wrap {
-        overflow-x: auto;
+        overflow-x: auto;   
+    }
+
+    .benchmarks h2 {
+        padding-top: 3rem;
+    }
+
+    .benchmarks p {
+        padding-top: 1rem;
     }
 
     .navbar ul {

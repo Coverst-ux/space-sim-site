@@ -204,36 +204,36 @@
 
 
     <section class="benchmarks" id="benchmarks">
-        <canvas id="interactiveTable"></canvas>
         <h2>Performance</h2>
         <div class="table-wrap">
-        <table>
-            <thead>
-                <tr>
-                    <th>Method</th>
-                    <th>Time (N=500, 50 steps)</th>
-                    <th>Relative Speed</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Barnes-Hut pure Python</td>
-                    <td>100.1s</td>
-                    <td>3x slower</td>
-                </tr>
-                <tr>
-                    <td>O(N²) pure Python</td>
-                    <td>33.07s</td>
-                    <td>baseline</td>
-                </tr>
-                <tr>
-                    <td>NumPy vectorized</td>
-                    <td>0.835s</td>
-                    <td>39.6x faster</td>
-                </tr>
-            </tbody>
-        </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Method</th>
+                        <th>Time (N=500, 50 steps)</th>
+                        <th>Relative Speed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Barnes-Hut pure Python</td>
+                        <td>100.1s</td>
+                        <td>3x slower</td>
+                    </tr>
+                    <tr>
+                        <td>O(N²) pure Python</td>
+                        <td>33.07s</td>
+                        <td>baseline</td>
+                    </tr>
+                    <tr>
+                        <td>NumPy vectorized</td>
+                        <td>0.835s</td>
+                        <td>39.6x faster</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+        <canvas id="interactiveTable"></canvas>
         <p class="benchmark-note">
             Barnes-Hut underperforms at N=500 due to pure Python tree construction and 
             recursive traversal overhead, expected at low N. NumPy vectorization wins at 
